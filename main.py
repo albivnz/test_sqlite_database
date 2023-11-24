@@ -14,7 +14,7 @@ class DatabaseManager():
     def create_new_table(self):
         self.table_name = input("Please enter a name for the new table:")
         self.last_sql_command = f"""CREATE TABLE {self.table_name}(
-        ID int
+        ID int;
         )"""
         self.cursor.execute(self.last_sql_command)
 
